@@ -11,9 +11,12 @@ respuesta = requests.get(url)
 if respuesta.status_code == 200:
     try:
         datosperros= respuesta.json()
-        facto_perro= data[0]["fact"]
-        dfperros = pd.DataFrame({"facto": [facto_perro]})
-        print(dfperros.head())
+        if datosperros:
+            facto_perro= data[0]["fact"]
+            dfperros = pd.DataFrame({"facto": [facto_perro]})
+            print(dfperros.head())
+        else:
+            print("Respuesta esta vacia")
     except json.JSONDecodeError as e:
         print("Error en el JSON", str(e))
 else:

@@ -1,2 +1,2 @@
 # Prueba-APIs-py
-Ejercicio de python testeando REST APIs para un curso de Coursera
+Ejercicio de python testeando APIs para un curso de Coursera
