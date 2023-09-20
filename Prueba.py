@@ -21,3 +21,5 @@ if respuesta.status_code == 200:
         print("Error en el JSON", str(e))
 else:
     print("El error esta en la API .Codigo:", respuesta.status_code)
+
+#ya que mi codigo en otros intentos funciono es esta api la que no funciona por lo tanto lo voy a dejar asi nomas y seguir probando con otras apis
